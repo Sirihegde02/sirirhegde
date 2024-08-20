@@ -6,6 +6,7 @@ const Section = styled.div`
     scroll-snap-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
 `;
 
 const Container = styled.div`
@@ -54,14 +55,36 @@ const Desc = styled.p`
 `;
 
 const Button = styled.button`
-    background-color: #da4ea2;
+    // background-color: #da4ea2;
+    // color: white;
+    // font-weight: 500;
+    // width: 100px;
+    // padding: 10px;
+    // border: none;
+    // border-radius: 5px;
+    // cursor: pointer;
+    width: 140px; /* Increased width to fit "Learn More" on one line */
+    padding: 8px 16px; /* Adjusted padding for balance */
+    background: linear-gradient(90deg, #ff6ec4, #f9a8d4); /* Matching pink gradient */
     color: white;
-    font-weight: 500;
-    width: 100px;
-    padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px; /* Rounded corners for a modern look */
     cursor: pointer;
+    font-size: 14px; /* Appropriate font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center align text */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+
+    &:hover {
+        background: linear-gradient(90deg, #e91e63, #ff6ec4); /* Matching hover gradient */
+        transform: scale(1.05); /* Slightly increase size on hover */
+        box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+    }
+
+    &:active {
+        transform: scale(0.98); /* Slightly reduce size on click */
+    }
 `;
 
 const Who = () => {
@@ -69,22 +92,20 @@ const Who = () => {
     <Section>
       <Container>
         <Left>
-                    {/* 3d model */}
+        {/* 3d model */}
         </Left>
         <Right>
-
-          <Title>Hi I'm Siri, and welcome to my portfolio website!</Title>
+          <Title>What do I do?</Title>
           <WhatWeDo>
             <Line src = "./img/line.png"/>
-            <Subtitle>Who am I</Subtitle>
+            <Subtitle>I'm an aspiring Software Engineer</Subtitle>
           </WhatWeDo>
-          <Desc>I am a student at Penn State University majoring in Computer Science, with a minor in Mathematics.</Desc>
-          <Button>Learn More</Button>
-          <Img src = "/img/moon.png"/>
+          <Desc>I've worked as an intern at companies including PennDOT and Sheetz. I also have research experience from Penn State University.</Desc>
+          <Button>See My Work</Button>
         </Right>
       </Container>
     </Section>
   );
 };
 
-export default Hero
+export default Who
