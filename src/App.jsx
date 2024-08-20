@@ -12,7 +12,7 @@ const Container = styled.div`
   overflow-y: auto;
   screwbar-width:none;
   color: white;
-  background: url("./img/");
+  background: url("./img/bg.jpeg");
   &::-webkit-scrollbar{
     display: none;
   }
