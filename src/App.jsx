@@ -32,9 +32,9 @@ function App() {
 
 
 //TO DO:
-//I created the img folder inside the public folder.
-//I need to drop some images in there
-//Time: 10:48
+//I'm working on the Navbar in Hero section
+//I need to make my logo a .png so that my website looks good, right now it is covering the whole page.
+//Time: 16:00
 
 
 export default App
