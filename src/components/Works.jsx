@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import Development from "./Development";
+import ProductDesign from "./ProductDesign";
+import WebDesign from "./WebDesign";
 
 const data = [
   "Software Engineering",

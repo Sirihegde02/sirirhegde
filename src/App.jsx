@@ -1,9 +1,9 @@
-import Hero from "./components/Hero"
-import Who from "./components/Who"
-import Works from "./components/Works"
-import Contact from "./components/Contact"
-import styled from 'styled-components'
-import React from 'react'
+import Hero from "./components/Hero";
+import Who from "./components/Who";
+import Works from "./components/Works";
+import Contact from "./components/Contact";
+import styled from 'styled-components';
+import React from 'react';
 
 const Container = styled.div`
   height: 100vh;
@@ -16,7 +16,7 @@ const Container = styled.div`
   &::-webkit-scrollbar{
     display: none;
   }
-`
+`;
 
 function App() {
 
@@ -38,4 +38,4 @@ function App() {
 //Time: 43:00, with exceptions :)
 
 
-export default App
+export default App;
