@@ -124,7 +124,7 @@ const Hero = () => {
         </Left>
         <Right>
           {/* 3d model */}
-          <Img src = "/img/moon.png"/>
+          <Img src = "/img/spaceman.png"/>
         </Right>
       </Container>
     </Section>
