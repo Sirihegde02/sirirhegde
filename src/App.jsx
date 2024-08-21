@@ -42,9 +42,9 @@ function App() {
 //Replace the "Hire Me" button to have 4 buttons, one for email, one for github and one for linkedIn, and link them to those
 
 //Hero changes:
-//Say the page is under construction
-//Turn the spaceman from facing right to facing left
-//Change the "Learn More" button to "Say Hi", when clicked it should draft an email to me.
+//Say the page is under construction -v
+//Turn the spaceman from facing right to facing left -v
+//Change the "Learn More" button to give options for someone to connect with me -v
 
 //Who changes:
 //Headline "About Me"
