@@ -32,9 +32,10 @@ function App() {
 
 
 //TO DO:
-//I'm working on the Navbar in Hero section
-//I need to make my logo a .png so that my website looks good, right now it is covering the whole page.
-//Time: 16:00
+//I've finished the Hero.jsx, the Who and Works are only set up with no images.
+//The Works needs fixing, the animation won't work
+//The Contact page needs fixing, the map doesn't appear 
+//Time: 43:00, with exceptions :)
 
 
 export default App
