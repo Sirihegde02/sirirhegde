@@ -156,7 +156,7 @@ const Hero = () => {
             <Subtitle>My name is Siri Hegde.</Subtitle>
           </WhatWeDo>
           <Desc>
-          I am a student at Penn State University majoring in Computer Science, with a minor in Mathematics.
+          This website it still under construction, please come back in a bit :)
           </Desc>
           <Button>Learn More</Button>
         </Left>
