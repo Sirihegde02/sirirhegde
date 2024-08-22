@@ -104,10 +104,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_id",
-        "template_id",
+        "service_fhu6n7e", //EmailJS service ID
+        "template_0w4x0cl", //EmailJS template ID
         ref.current,
-        "public_key"
+        "u5q9vOOmIN5SDx-eF" //EmailJS public key
       )
       .then(
         (result) => {
@@ -120,24 +120,26 @@ const Contact = () => {
         }
       );
   };
+
   return (
     <Section>
       <Container>
         <Left>
           <Form ref={ref} onSubmit={handleSubmit}>
             <Title>Contact Me</Title>
-            <Input placeholder="Name" name="name" />
-            <Input placeholder="Email" name="email" />
+            <Input placeholder="Name" name="name" required />
+            <Input placeholder="Email" name="email" type="email" required />
+            <Input placeholder="Subject" name="subject" required />
             <TextArea
               placeholder="Write your message"
               name="message"
               rows={10}
+              required
             />
             <ButtonContainer>
               <Button type="submit">Send</Button>
             </ButtonContainer>
-            {success &&
-              "Your message has been sent. We'll get back to you soon :)"}
+            {success && "Your message has been sent. I'll get back to you soon :)"}
           </Form>
         </Left>
         <Right>
