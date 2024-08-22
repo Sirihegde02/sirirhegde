@@ -2,15 +2,16 @@ import Hero from "./components/Hero";
 import Who from "./components/Who";
 import Works from "./components/Works";
 import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
 import styled from 'styled-components';
-import React from 'react';
+import React, { useRef } from 'react';
 
 const Container = styled.div`
   height: 100vh;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-y: auto;
-  screwbar-width:none;
+  scrollbar-width: none;
   color: white;
   background: url("./img/bg.jpeg");
   &::-webkit-scrollbar{
@@ -19,17 +20,41 @@ const Container = styled.div`
 `;
 
 function App() {
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const experienceRef = useRef(null);
+  const contactRef = useRef(null);
+
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <Container>
-      <Hero/>
-      <Who/>
-      <Works/>
-      <Contact/>
+      <Navbar 
+        scrollToSection={scrollToSection} 
+        homeRef={homeRef} 
+        aboutRef={aboutRef} 
+        experienceRef={experienceRef} 
+        contactRef={contactRef} 
+      />
+      <div ref={homeRef}>
+        <Hero/>
+      </div>
+      <div ref={aboutRef}>
+        <Who/>
+      </div>
+      <div ref={experienceRef}>
+        <Works/>
+      </div>
+      <div ref={contactRef}>
+        <Contact/>
+      </div>
     </Container>
-  )
+  );
 }
-
 
 //TO DO:
 
