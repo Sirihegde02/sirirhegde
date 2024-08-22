@@ -36,15 +36,13 @@ function App() {
 //Navbar changes:
 //When the page is viewed in half, then make the Navbar closer.
 //Make the Navbar Navigate
-//Change the Logo to look better
+//Change the Logo to look better -v
 //Make an icon the icon for the tab
 //Call the tab your name
 //Replace the "Hire Me" button to have 4 buttons, one for email, one for github and one for linkedIn, and link them to those
 
 //Hero changes:
-//Say the page is under construction -v
-//Turn the spaceman from facing right to facing left -v
-//Change the "Learn More" button to give options for someone to connect with me -v
+//All done
 
 //Who changes:
 //Headline "About Me"
