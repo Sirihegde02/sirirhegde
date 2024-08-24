@@ -62,8 +62,8 @@ function App() {
 //When the page is viewed in half, then make the Navbar closer.
 //Make the Navbar Navigate
 //Change the Logo to look better -v
-//Make an icon the icon for the tab
-//Call the tab your name
+//Make an icon the icon for the tab 
+//Call the tab your name -v
 //Replace the "Hire Me" button to have 4 buttons, one for email, one for github and one for linkedIn, and link them to those
 
 //Hero changes:
