@@ -64,7 +64,6 @@ function App() {
 //Change the Logo to look better -v
 //Make an icon the icon for the tab (uncomment the code in index and give it an icon)
 //Call the tab your name -v
-//Replace the "Hire Me" button to have 4 buttons, one for email, one for github and one for linkedIn, and link them to those
 
 //Hero changes:
 //All done
